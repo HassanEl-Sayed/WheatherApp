@@ -20,7 +20,7 @@ hbs.registerPartials(patialPath)
 //setup static directory to serve
 app.use(express.static(publicDirctoryPath))
 
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index', {
         title: 'Weather',
         name: 'Hassan El-Sayed'
